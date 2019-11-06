@@ -1,19 +1,11 @@
 {% extends 'base.jinja2' %}
 
-{% block subtitle %}{{ name }} Donations{% endblock subtitle %}
+{% block subtitle %}Donations{% endblock subtitle %}
 
 {% block content %}
 <ul>
     {% for donation in donations %}
-        <li>
-            <article class="media content-section">
-          <div class="media-body">
-            <div class="article-metadata">
-                <b>{{ donation.donor.name }}</b>: {{ donation.value }}
-         </div>
-          </div>
-        </article>
-        </li>
+        <li><b>{{ donation.donor.name }}</b>: {{ donation.value }}</li>
     {% endfor %}
 </ul>
 {% endblock content %}
