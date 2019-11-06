@@ -1,7 +1,7 @@
 import os
 import base64
 
-from models import db, Donor, Donation  # noqa F403
+from model import db, Donor, Donation  # noqa F403
 from peewee import *  # noqa F403
 import logging
 
